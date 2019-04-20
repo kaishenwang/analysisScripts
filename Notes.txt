@@ -1,0 +1,11 @@
+Use findDomainByOldID.py do find performance of old ID. Result stored in oldIDMatchResult.txt
+Use getValidDomains.py to filter out un_successful http response. Store valid domains in validDomains.txt
+Use findNSInRR.py to find NS with special name. 
+Use collectDomainByNS.py to find parked domains by special NS and store them in domainByTokenAndOtherNS.txt.
+Use findAdditionDomainByNewID.py to find domains by new ID.
+Extract and save html features in parkedInfo.csv and topDomainInfo.csv.
+Use sample10K.py to sample parkedInfo.csv into sampleParkedInfo.csv.
+Use generateData.py to combine sampleParkedInfo.csv and topDomainInfo.csv to dataFull.csv.
+Remove some problematic cases in dataFull.csv.
+Use cutData.py to get data.csv. data.csv has no domain and URL in the field.
+Use rf.py to generate model, performance at modelResult.txt. Model saved at randomeForest.pickle.
